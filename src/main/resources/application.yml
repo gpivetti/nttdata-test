@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+# Spring Configs
+spring:
+  mvc:
+    view:
+          prefix: /WEB-INF/jsp/
+          suffix: .jsp
+    static-path-pattern: /content/**
+
+  # Database Settings
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/devtest?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=UTC
+    username: gabriel
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
+# Flyway Settings
+#flyway:
+#  url: jdbc:mysql://localhost:3306/
+#  schemas: rest_with_spring_boot_udemy
+#  user: gabriel
+#  password: 1234
+
+# App Settings
+app:
+  security:
+    user: nttdata
+    password: nttdata

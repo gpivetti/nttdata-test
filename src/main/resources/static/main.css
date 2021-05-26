@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f8f8 !important
+}
+
+.handleButton {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 10px;
+}
+
+.roundBox {
+    font-size: 12px;
+    float: left;
+}
+
+.result {
+    font-size: 12px;
+}
+
+.score {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.versus {
+    padding: 0px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.winner {
+    font-size: 24px; !important
+    margin-bottom: 15px;
+}
+
+.winner-draw {
+    color: orange;
+    font-weight: bold;
+}
+
+.winner-player {
+    color: green;
+    font-weight: bold;
+}
+
+.winner-npc {
+    color: red;
+    font-weight: red;
+}
